@@ -61,7 +61,7 @@ const T0=[
 {id:6,t:'Thailand Budget Adventure',d:'Thailand',c:'Budget Holidays',n:7,cur:'USD',p:1350,h:20,inc:['Return flight','Hotels','Transfers','Breakfast','Island hopping','Local guide']},
 {id:7,t:'Istanbul Weekend Getaway',d:'Turkey',c:'Weekend Getaways',n:4,cur:'USD',p:1250,h:5,inc:['Return flight','Hotel','Airport transfers','Breakfast','Bosphorus cruise']},
 {id:8,t:'Maldives Island Retreat',d:'Maldives',c:'Honeymoon Packages',n:6,cur:'USD',p:3100,h:200,inc:['Return flight','Water villa','Speedboat transfers','All-inclusive','Snorkelling']}];
-let S={set:ld('set',{email:'bookings@safariwings.example',wa:'256700000000'}),tours:ld('tours',T0),extra:ld('extra',[]),bk:ld('bk',[]),seq:ld('seq',124),cat:'All',reg:'Africa',dst:null};
+let S={set:ld('set',{email:'bookings@safariwings.example',wa:'256787543387'}),tours:ld('tours',T0),extra:ld('extra',[]),bk:ld('bk',[]),seq:ld('seq',124),cat:'All',reg:'Africa',dst:null};
 const price=t=>t.ov||t.p*(RATE[t.cur]||1);
 const dests=()=>{const o=JSON.parse(JSON.stringify(REG));S.extra.forEach(x=>(o[x.r]=o[x.r]||[]).push(x.n));return o};
 const allD=()=>[...new Set(Object.values(dests()).flat())].sort();
